@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Novo Horizonte | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
+
+    <header class="header-principal">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" aria-label="Escola Novo Horizonte - Página Inicial">
+                    <strong>Escola Novo Horizonte</strong>
+                </a>
+            </div>
+            
+            <nav aria-label="Navegação principal">
+                <ul class="menu-nav">
+                    <li><a href="index.html" aria-current="page">Início</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+        
+        <section class="hero" aria-label="Destaque">
+            <div class="container">
+                <h1>Educando para o Futuro</h1>
+                <p>Uma escola acolhedora, inovadora e focada no desenvolvimento integral do estudante.</p>
+                <a href="#contato" class="btn-principal">Matricule-se Já</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="secao-sobre" tabindex="-1">
+            <div class="container grid-2">
+                <div class="texto-sobre">
+                    <h2>Quem Somos</h2>
+                    <p>Com mais de 20 anos de tradição, a Escola Novo Horizonte se destaca pela excelência acadêmica e pela formação de cidadãos conscientes e preparados para os desafios do mundo.</p>
+                    <p>Nossa metodologia valoriza a criatividade, o pensamento crítico e a inclusão de todos os alunos.</p>
+                </div>
+                <div class="imagem-sobre">
+                    <img src="imagens/escola-fachada.jpg" alt="Fachada da Escola Novo Horizonte, um prédio moderno de dois andares com árvores ao redor e rampa de acessibilidade.">
+                </div>
+            </div>
+        </section>
+
+        <section id="cursos" class="secao-cursos" tabindex="-1">
+            <div class="container">
+                <h2>Nossos Níveis de Ensino</h2>
+                <div class="grid-3">
+                    <article class="card-curso">
+                        <h3>Educação Infantil</h3>
+                        <p>Aprender brincando. Foco no desenvolvimento motor, social e na criatividade das crianças.</p>
+                    </article>
+                    
+                    <article class="card-curso">
+                        <h3>Ensino Fundamental</h3>
+                        <p>Construção de uma base sólida de conhecimento, estimulando a curiosidade e a autonomia.</p>
+                    </article>
+
+                    <article class="card-curso">
+                        <h3>Ensino Médio</h3>
+                        <p>Preparação integral para o vestibular, mercado de trabalho e para a vida cidadã.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="secao-contato" tabindex="-1">
+            <div class="container">
+                <h2>Fale Conosco</h2>
+                <p>Ficou com alguma dúvida? Preencha o formulário abaixo e nossa equipe entrará em contato.</p>
+                
+                <form action="#" method="POST" class="form-contato">
+                    <div class="grupo-form">
+                        <label prejudices for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required autocomplete="name">
+                    </div>
+
+                    <div class="grupo-form">
+                        <label for="email">E-mail válido:</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </div>
+
+                    <div class="grupo-form">
+                        <label for="mensagem">Sua Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape-principal">
+        <div class="container">
+            <p>&copy; 2026 Escola Novo Horizonte. Todos os direitos reservados.</p>
+            <p>Endereço: Rua da Educação, 123 - Centro | Telefone: (11) 4002-8922</p>
+        </div>
+    </footer>
+
+</body>
+</html>
