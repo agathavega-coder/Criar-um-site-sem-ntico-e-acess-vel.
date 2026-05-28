@@ -1,0 +1,220 @@
+/* --- Configurações Reset e Acessibilidade Básica --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222222; /* Alto contraste com fundo branco */
+    background-color: #ffffff;
+}
+
+/* Link invisível que aparece ao pressionar TAB */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #0044cc;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.2s;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Indicador de foco nítido para navegação via teclado */
+input:focus-visible, 
+textarea:focus-visible, 
+button:focus-visible, 
+a:focus-visible {
+    outline: 3px solid #ffcc00;
+    outline-offset: 2px;
+}
+
+/* --- Layouts e Containers --- */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* --- Header e Menu --- */
+.header-principal {
+    background-color: #0033aa; /* Azul escuro com bom contraste para texto branco */
+    color: #ffffff;
+}
+
+.header-principal .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.logo a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.menu-nav {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.menu-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-bottom: 2px solid transparent;
+}
+
+.menu-nav a:hover, 
+.menu-nav a[aria-current="page"] {
+    border-bottom: 2px solid #ffcc00;
+}
+
+/* --- Hero Banner --- */
+.hero {
+    background-color: #f0f4f8;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #002288;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.btn-principal {
+    display: inline-block;
+    background-color: #d32f2f; /* Vermelho escuro acessível */
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.btn-principal:hover {
+    background-color: #b71c1c;
+}
+
+/* --- Seções Comuns --- */
+h2 {
+    font-size: 2rem;
+    color: #002288;
+    margin-bottom: 1rem;
+}
+
+.secao-sobre, .secao-contato {
+    background-color: #ffffff;
+}
+
+.secao-cursos {
+    background-color: #f9f9f9;
+}
+
+/* Cards de Cursos */
+.card-curso {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card-curso h3 {
+    color: #0033aa;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Formulário --- */
+.form-contato {
+    max-width: 600px;
+    margin-top: 1.5rem;
+}
+
+.grupo-form {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.grupo-form input, 
+.grupo-form textarea {
+    padding: 0.75rem;
+    border: 2px solid #767676; /* Borda escura para melhor visibilidade */
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.btn-enviar {
+    background-color: #0033aa;
+    color: #ffffff;
+    padding: 0.75rem 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background-color: #002288;
+}
+
+/* --- Rodapé --- */
+.rodape-principal {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.rodape-principal p {
+    margin-bottom: 0.5rem;
+}
